@@ -1,0 +1,16 @@
+add 購物車 10
+add 定價 10
+add 試閱 10
+add ISBN 9
+add 庫存 8
+add 目錄 7
+add 客服 6
+add 結帳 6
+add 退換貨 5
+add 排行 5
+add 優惠價 4
+add 作者 3
+add 出版社 3
+add 出版日期 3
+add 內容簡介 2
+add 會員 1

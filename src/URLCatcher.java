@@ -66,7 +66,7 @@ public class URLCatcher {
 					
 					if(citeUrl.contains("javascript:")||citeUrl.contains("#accesskey")||citeUrl==""
 							||citeUrl.contains("feebee")||citeUrl.contains("biggo")||citeUrl.contains("findprice")
-							||citeUrl.length()<10||citeUrl.contains(".pdf")||citeUrl.contains(".doc")||citeUrl.contains("wikipedia")||citeUrl.contains("https://www.books.com.tw/web/")||urllist.size()>2||urllist.contains(citeUrl)){}
+							||citeUrl.length()<10||citeUrl.contains(".pdf")||citeUrl.contains(".doc")||citeUrl.contains("wikipedia")||citeUrl.contains("https://www.books.com.tw/web/")||urllist.size()>3||urllist.contains(citeUrl)){}
 					else
 					{urllist.add(citeUrl);}
 					

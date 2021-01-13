@@ -12,6 +12,7 @@ public class KeywordList {
 	public void add(Keyword keyword){
 		lst.add(keyword);
 	}
+		
 	public void outputScore(){
 		float results = 0;
 		for(int i=0;i<lst.size();i++){
@@ -29,6 +30,7 @@ public class KeywordList {
 		int weight =  lst.get(i).weight;
 		return weight;
 	}
+	
 	
 	public int size() {
 		int size = lst.size();

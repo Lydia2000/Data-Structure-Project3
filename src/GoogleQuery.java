@@ -28,7 +28,7 @@ public class GoogleQuery
 
 {
 
-	public String searchKeyword;
+	public String searchKeyword2;
 
 	public String url;
 
@@ -37,9 +37,16 @@ public class GoogleQuery
 	public GoogleQuery(String searchKeyword)
 
 	{
-		this.searchKeyword = searchKeyword;
+		if(searchKeyword.contains(" ")) {
+		this.searchKeyword2 = searchKeyword.replaceAll(" ", "+");}
+		else {
+			this.searchKeyword2 = searchKeyword;
+		}
+		
+			System.out.println("空格得思"+searchKeyword);
+		
 
-		this.url = "http://www.google.com/search?q="+searchKeyword+"&oe=utf8&num=13";
+		this.url = "http://www.google.com/search?q="+searchKeyword2+"&oe=utf8&num=13";
 
 	}
 
@@ -101,7 +108,7 @@ public class GoogleQuery
 				String title = li.select("a").get(0).select(".vvjwJb").text();
 				String citeUrl2="https://www.google.com"+citeUrl;
 				if(citeUrl.contains("feebee")||citeUrl.contains("biggo")||citeUrl.contains("findprice")||citeUrl.contains("eslite")||citeUrl.contains("findprice")||citeUrl.contains("kobo")
-						||citeUrl.contains("wikipedia")||citeUrl.contains("youtube")||citeUrl.contains("facebook")||citeUrl2.contains("https://www.google.comhttp://www.google.com/search?")||citeUrl.contains("https://www.google.com/search?")||citeUrl.length()<10){}
+						||citeUrl.contains("pixnet")	||citeUrl.contains("wikipedia")||citeUrl.contains("youtube")||citeUrl.contains("facebook")||citeUrl2.contains("https://www.google.comhttp://www.google.com/search?")||citeUrl.contains("https://www.google.com/search?")||citeUrl.length()<10){}
 				else
 				{retVal.put(title, citeUrl2);}
 

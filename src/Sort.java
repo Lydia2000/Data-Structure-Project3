@@ -11,7 +11,7 @@ public class Sort {
 	static ArrayList<Website> arrayStudent = new ArrayList<>();
 	String rec="";
 	 public  HashMap sort(ArrayList<String>name,ArrayList<String>url,ArrayList<Integer>score) throws IOException { 
-	
+	System.out.print(score);
 		  for(int i=0;i<url.size();i++) {
 			  if(url.get(i).contains("https://www.taaze.tw/rwd_searchResult.html?keyType%5B%5D=1&keyword%5B%5D=")) {
 				  url.get(i).replaceAll("https://www.taaze.tw/rwd_searchResult.html?keyType%5B%5D=1&keyword%5B%5D=你好","https://www.taaze.tw/rwd_searchResult.html?keyType%5B%5D=1&keyword%5B%5D=");

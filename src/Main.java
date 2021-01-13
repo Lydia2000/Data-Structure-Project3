@@ -92,7 +92,7 @@ public class Main {
 		    	KeywordCounter2 counter = new KeywordCounter2(url.get(x));  
 
 			score=	counter.returnScore();
-		if(webscore<2500)
+		if(webscore<500)
 		{webscore=webscore+score;}
 
 		}
@@ -108,8 +108,8 @@ public class Main {
 		resultURL.add("https://www.eslite.com/Search?manufacturer=&author=&stock=&retail_price=&manufacturer_date=&sort=&size=20&start=0&status=&categories=&keyword="+keyword);
 	  resultURL.add("https://www.taaze.tw/rwd_searchResult.html?keyType%5B%5D=1&keyword%5B%5D="+keyword);
 	//  resultScore.add(500);
-		resultScore.add(1000);
-		resultScore.add(1000);
+		resultScore.add(100);
+		resultScore.add(100);
 
 		//resultName.add(keyword+"-金石堂");
 		resultName.add(keyword+"-誠品");
